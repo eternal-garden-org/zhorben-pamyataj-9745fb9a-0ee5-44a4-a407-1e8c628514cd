@@ -1,4 +1,4 @@
-app = "${FLY_APP_NAME}"
+app = "zhorben-pamyataj-9745fb9a-0ee5-44a4-a407-1e8c628514cd"
 
 [build]
 
@@ -11,6 +11,7 @@ min_machines_running = 0
 
 [env]
 NODE_ENV = 'production'
+DEPLOY_ID = 'ac20684a-c1fd-4493-8c24-40376c4483ab'
 
 [[vm]]
 memory = "512mb"
