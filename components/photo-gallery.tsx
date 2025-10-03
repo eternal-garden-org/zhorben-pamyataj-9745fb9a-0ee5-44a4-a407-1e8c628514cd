@@ -26,7 +26,7 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
 
         <div className="flex flex-col md:flex-row gap-5 items-start justify-center">
           {/* Thumbnail List */}
-          <div className="flex md:flex-col gap-2.5 overflow-x-auto md:overflow-y-auto md:max-h-[600px] scrollbar-hide order-2 md:order-1 w-full md:w-auto">
+          <div className="flex md:flex-col gap-2.5 overflow-x-auto md:overflow-y-auto md:max-h-[600px] order-2 md:order-1 w-full md:w-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {photos.map((photo, index) => (
               <button
                 key={index}

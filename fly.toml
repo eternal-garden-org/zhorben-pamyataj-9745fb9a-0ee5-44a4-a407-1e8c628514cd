@@ -11,7 +11,7 @@ min_machines_running = 0
 
 [env]
 NODE_ENV = 'production'
-DEPLOY_ID = 'ac20684a-c1fd-4493-8c24-40376c4483ab'
+DEPLOY_ID = 'a3a59ae8-03ca-4c10-8647-a87a540ad89a'
 
 [[vm]]
 memory = "512mb"

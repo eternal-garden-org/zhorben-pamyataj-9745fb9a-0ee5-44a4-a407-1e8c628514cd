@@ -7,7 +7,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 interface BiographyItem {
@@ -42,17 +41,10 @@ export function BiographyAccordion({ items }: BiographyAccordionProps) {
                   isOpen ? "border-white" : "border-[#2D2D2D]"
                 }`}
               >
-                <AccordionTrigger className="hover:no-underline py-0">
-                  <div className="flex items-center justify-between w-full">
-                    <Typography.P className="text-xl text-white font-medium">
-                      {item.title}
-                    </Typography.P>
-                    {isOpen ? (
-                      <ChevronUp className="w-5 h-5 text-[#F6B95A] shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-[#F6B95A] shrink-0" />
-                    )}
-                  </div>
+                <AccordionTrigger className="hover:no-underline py-0 [&>svg]:text-[#F6B95A]">
+                  <Typography.P className="text-xl text-white font-medium">
+                    {item.title}
+                  </Typography.P>
                 </AccordionTrigger>
                 <AccordionContent className="pt-5 pb-0">
                   <Typography.P className="text-base text-[#8B8B8B] font-normal leading-relaxed">
